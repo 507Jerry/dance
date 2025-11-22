@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>师资团队 - 舞蹈学校</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- 导航栏 -->
+    <nav class="fixed top-0 w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold text-pink-500">Dance School</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-pink-500">首页</a>
+                    <a href="classes.html" class="text-gray-700 hover:text-pink-500">课程介绍</a>
+                    <a href="teachers.html" class="text-pink-500 font-semibold hover:text-pink-600">师资团队</a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-pink-500">环境展示</a>
+                    <a href="about.html" class="text-gray-700 hover:text-pink-500">关于我们</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-pink-500">联系方式</a>
+                    <a href="faq.html" class="text-gray-700 hover:text-pink-500">FAQ</a>
+                </div>
+                <button class="md:hidden text-gray-700" id="mobileMenuBtn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden md:hidden pb-4" id="mobileMenu">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-pink-500">首页</a>
+                <a href="classes.html" class="block py-2 text-gray-700 hover:text-pink-500">课程介绍</a>
+                <a href="teachers.html" class="block py-2 text-pink-500 font-semibold">师资团队</a>
+                <a href="gallery.html" class="block py-2 text-gray-700 hover:text-pink-500">环境展示</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-pink-500">关于我们</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-pink-500">联系方式</a>
+                <a href="faq.html" class="block py-2 text-gray-700 hover:text-pink-500">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-pink-50 to-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">专业导师团队</h1>
+            <p class="text-xl text-gray-600">经验丰富、专业负责的舞蹈教师</p>
+        </div>
+    </section>
+
+    <!-- 老师卡片 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- 老师 1: Lisa -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="bg-gray-200 h-80 flex items-center justify-center">
+                        <span class="text-gray-400">Lisa 照片占位符</span>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">Lisa</h2>
+                        <p class="text-pink-500 font-semibold mb-4">芭蕾 / 少儿班</p>
+                        <p class="text-gray-600">10 年教学经验，擅长体态训练与柔韧指导。</p>
+                    </div>
+                </div>
+
+                <!-- 老师 2: Jason -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="bg-gray-200 h-80 flex items-center justify-center">
+                        <span class="text-gray-400">Jason 照片占位符</span>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">Jason</h2>
+                        <p class="text-pink-500 font-semibold mb-4">Jazz / Hip-Hop</p>
+                        <p class="text-gray-600">商业演出舞者兼编舞，善于节奏训练。</p>
+                    </div>
+                </div>
+
+                <!-- 老师 3: Mina -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="bg-gray-200 h-80 flex items-center justify-center">
+                        <span class="text-gray-400">Mina 照片占位符</span>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">Mina</h2>
+                        <p class="text-pink-500 font-semibold mb-4">KPOP</p>
+                        <p class="text-gray-600">韩流舞蹈专长，风格亲切适合零基础。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-pink-500">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">想了解更多关于我们的老师？</h2>
+            <a href="contact.html" class="inline-block bg-white text-pink-500 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">联系我们</a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">联系方式</h3>
+                    <p class="mb-2">电话：0400 000 000</p>
+                    <p class="mb-2">微信/WhatsApp：Jing66868</p>
+                    <p>Instagram：@yourdance</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">地址</h3>
+                    <p>330 Dandenong Road, Carnegie VIC 3163</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">营业时间</h3>
+                    <p>Mon – Sun：10:00 – 21:00</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p>&copy; Dance School</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
