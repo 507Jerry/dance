@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>师资团队 - 舞蹈学校</title>
+    <title>课程预约 - 舞蹈学校</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="custom-styles.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
         body {
@@ -21,7 +22,7 @@
                 <div class="hidden md:flex space-x-6">
                     <a href="index.html" class="text-gray-700 hover:text-lavender">首页</a>
                     <a href="classes.html" class="text-gray-700 hover:text-lavender">课程介绍</a>
-                    <a href="teachers.html" class="text-lavender font-semibold hover:text-lavender-dark">师资团队</a>
+                    <a href="teachers.html" class="text-lavender font-semibold hover:text-lavender-dark">课程预约</a>
                     <a href="gallery.html" class="text-gray-700 hover:text-lavender">环境展示</a>
                     <a href="about.html" class="text-gray-700 hover:text-lavender">关于我们</a>
                     <a href="contact.html" class="text-gray-700 hover:text-lavender">联系方式</a>
@@ -36,7 +37,7 @@
             <div class="hidden md:hidden pb-4" id="mobileMenu">
                 <a href="index.html" class="block py-2 text-gray-700 hover:text-lavender">首页</a>
                 <a href="classes.html" class="block py-2 text-gray-700 hover:text-lavender">课程介绍</a>
-                <a href="teachers.html" class="block py-2 text-lavender font-semibold">师资团队</a>
+                <a href="teachers.html" class="block py-2 text-lavender font-semibold">课程预约</a>
                 <a href="gallery.html" class="block py-2 text-gray-700 hover:text-lavender">环境展示</a>
                 <a href="about.html" class="block py-2 text-gray-700 hover:text-lavender">关于我们</a>
                 <a href="contact.html" class="block py-2 text-gray-700 hover:text-lavender">联系方式</a>
@@ -46,63 +47,150 @@
     </nav>
 
     <!-- 页面标题 -->
-    <section class="pt-24 pb-12 bg-gradient-to-br from-pink-50 to-white">
+    <section class="pt-24 pb-12 bg-gradient-mist">
         <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">专业导师团队</h1>
-            <p class="text-xl text-gray-600">经验丰富、专业负责的舞蹈教师</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">课程预约</h1>
+            <p class="text-xl text-gray-600">填写以下信息，我们会尽快与您联系确认预约</p>
         </div>
     </section>
 
-    <!-- 老师卡片 -->
+    <!-- 预约表单 -->
     <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <!-- 老师 1: Lisa -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="bg-gray-200 h-80 flex items-center justify-center">
-                        <span class="text-gray-400">Lisa 照片占位符</span>
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="bg-white rounded-lg shadow-lg p-8 md:p-12">
+                <form action="https://formsubmit.co/871941668w@gmail.com" method="POST" id="bookingForm">
+                    <!-- 隐藏字段：设置邮件主题和重定向 -->
+                    <input type="hidden" name="_subject" value="【课程预约】新的预约申请">
+                    <input type="hidden" name="_next" value="https://udanceartstudio.com.au/teachers.html?success=true">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    
+                    <!-- 个人信息 -->
+                    <div class="mb-8">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b-2 border-lavender-light">个人信息</h2>
+                        
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-semibold mb-2">
+                                    姓名 <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lavender focus:border-transparent"
+                                    placeholder="请输入您的姓名">
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-semibold mb-2">
+                                    电话/微信 <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" id="phone" name="phone" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lavender focus:border-transparent"
+                                    placeholder="请输入电话或微信号">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">
+                                邮箱（可选）
+                            </label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lavender focus:border-transparent"
+                                placeholder="example@email.com">
+                        </div>
                     </div>
-                    <div class="p-6 text-center">
-                        <h2 class="text-2xl font-bold text-gray-800 mb-2">Lisa</h2>
-                        <p class="text-lavender font-semibold mb-4">芭蕾 / 少儿班</p>
-                        <p class="text-gray-600">10 年教学经验，擅长体态训练与柔韧指导。</p>
-                    </div>
-                </div>
 
-                <!-- 老师 2: Jason -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="bg-gray-200 h-80 flex items-center justify-center">
-                        <span class="text-gray-400">Jason 照片占位符</span>
+                    <!-- 课程信息 -->
+                    <div class="mb-8">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-3 border-b-2 border-lavender-light">课程信息</h2>
+                        
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="course" class="block text-gray-700 font-semibold mb-2">
+                                    预约课程 <span class="text-red-500">*</span>
+                                </label>
+                                <select id="course" name="course" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lavender focus:border-transparent">
+                                    <option value="">请选择课程</option>
+                                    <option value="古典舞">古典舞</option>
+                                    <option value="中国舞">中国舞</option>
+                                    <option value="现代舞">现代舞</option>
+                                    <option value="KPOP">KPOP</option>
+                                    <option value="芭蕾舞">芭蕾舞</option>
+                                    <option value="软开核心力量训练">软开核心力量训练</option>
+                                    <option value="芭蕾把杆课">芭蕾把杆课</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="preferredDate" class="block text-gray-700 font-semibold mb-2">
+                                    期望上课时间
+                                </label>
+                                <input type="text" id="preferredDate" name="preferredDate"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lavender focus:border-transparent"
+                                    placeholder="例如：周一晚上 或 周末上午">
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="age" class="block text-gray-700 font-semibold mb-2">
+                                    年龄/年龄段
+                                </label>
+                                <select id="age" name="age"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lavender focus:border-transparent">
+                                    <option value="">请选择</option>
+                                    <option value="3-8岁">3-8岁（少儿）</option>
+                                    <option value="9-15岁">9-15岁（青少年）</option>
+                                    <option value="16-25岁">16-25岁</option>
+                                    <option value="26-35岁">26-35岁</option>
+                                    <option value="36岁以上">36岁以上</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="experience" class="block text-gray-700 font-semibold mb-2">
+                                    舞蹈基础
+                                </label>
+                                <select id="experience" name="experience"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lavender focus:border-transparent">
+                                    <option value="">请选择</option>
+                                    <option value="零基础">零基础</option>
+                                    <option value="有基础">有基础</option>
+                                    <option value="有经验">有经验</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-6 text-center">
-                        <h2 class="text-2xl font-bold text-gray-800 mb-2">Jason</h2>
-                        <p class="text-lavender font-semibold mb-4">Jazz / Hip-Hop</p>
-                        <p class="text-gray-600">商业演出舞者兼编舞，善于节奏训练。</p>
-                    </div>
-                </div>
 
-                <!-- 老师 3: Mina -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <div class="bg-gray-200 h-80 flex items-center justify-center">
-                        <span class="text-gray-400">Mina 照片占位符</span>
+                    <!-- 备注 -->
+                    <div class="mb-8">
+                        <label for="message" class="block text-gray-700 font-semibold mb-2">
+                            备注/特殊需求
+                        </label>
+                        <textarea id="message" name="message" rows="4"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-lavender focus:border-transparent"
+                            placeholder="如有其他需求或问题，请在此填写..."></textarea>
                     </div>
-                    <div class="p-6 text-center">
-                        <h2 class="text-2xl font-bold text-gray-800 mb-2">Mina</h2>
-                        <p class="text-lavender font-semibold mb-4">KPOP</p>
-                        <p class="text-gray-600">韩流舞蹈专长，风格亲切适合零基础。</p>
+
+                    <!-- 提交按钮 -->
+                    <div class="text-center">
+                        <button type="submit"
+                            class="bg-lavender text-white px-12 py-4 rounded-lg font-semibold text-lg hover:bg-lavender-dark transition duration-300 shadow-md hover:shadow-lg">
+                            提交预约
+                        </button>
+                        <p class="text-sm text-gray-500 mt-4">
+                            提交后，我们会在24小时内与您联系确认预约
+                        </p>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="py-16 bg-lavender-light0">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-white mb-4">想了解更多关于我们的老师？</h2>
-            <a href="contact.html" class="inline-block bg-white text-lavender px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">联系我们</a>
-        </div>
-    </section>
+    <!-- 成功提示（通过URL参数显示） -->
+    <div id="successMessage" class="hidden fixed top-20 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-8 py-4 rounded-lg shadow-lg z-50">
+        <p class="text-lg font-semibold">✓ 预约提交成功！我们会尽快与您联系。</p>
+    </div>
 
     <!-- 页脚 -->
     <footer class="bg-gray-800 text-white py-12">
@@ -112,7 +200,7 @@
                     <h3 class="text-xl font-bold mb-4">联系方式</h3>
                     <p class="mb-2">电话：0400 000 000</p>
                     <p class="mb-2">微信/WhatsApp：Jing66868</p>
-                    <p>Instagram：@yourdance</p>
+                    <p>Instagram：@udanceart</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">地址</h3>
@@ -130,11 +218,34 @@
     </footer>
 
     <script>
+        // 移动端菜单切换
         document.getElementById('mobileMenuBtn').addEventListener('click', function() {
             const menu = document.getElementById('mobileMenu');
             menu.classList.toggle('hidden');
         });
+
+        // 检查URL参数，显示成功消息
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === 'true') {
+            const successMessage = document.getElementById('successMessage');
+            successMessage.classList.remove('hidden');
+            setTimeout(function() {
+                successMessage.classList.add('hidden');
+            }, 5000);
+        }
+
+        // 表单提交验证
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const course = document.getElementById('course').value;
+
+            if (!name || !phone || !course) {
+                e.preventDefault();
+                alert('请填写所有必填项（姓名、电话/微信、预约课程）');
+                return false;
+            }
+        });
     </script>
 </body>
 </html>
-
