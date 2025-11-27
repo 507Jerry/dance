@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首页 - 舞蹈学校</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="custom-styles.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
         body {
@@ -17,15 +18,15 @@
     <nav class="fixed top-0 w-full bg-white shadow-md z-50">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center h-16">
-                <div class="text-2xl font-bold text-pink-500">Dance School</div>
+                <div class="text-2xl font-bold text-lavender">Dance School</div>
                 <div class="hidden md:flex space-x-6">
-                    <a href="index.html" class="text-pink-500 font-semibold hover:text-pink-600">首页</a>
-                    <a href="classes.html" class="text-gray-700 hover:text-pink-500">课程介绍</a>
-                    <a href="teachers.html" class="text-gray-700 hover:text-pink-500">师资团队</a>
-                    <a href="gallery.html" class="text-gray-700 hover:text-pink-500">环境展示</a>
-                    <a href="about.html" class="text-gray-700 hover:text-pink-500">关于我们</a>
-                    <a href="contact.html" class="text-gray-700 hover:text-pink-500">联系方式</a>
-                    <a href="faq.html" class="text-gray-700 hover:text-pink-500">FAQ</a>
+                    <a href="index.html" class="text-lavender font-semibold hover:text-lavender-dark">首页</a>
+                    <a href="classes.html" class="text-gray-700 hover:text-lavender">课程介绍</a>
+                    <a href="teachers.html" class="text-gray-700 hover:text-lavender">师资团队</a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-lavender">环境展示</a>
+                    <a href="about.html" class="text-gray-700 hover:text-lavender">关于我们</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-lavender">联系方式</a>
+                    <a href="faq.html" class="text-gray-700 hover:text-lavender">FAQ</a>
                 </div>
                 <!-- 移动端菜单按钮 -->
                 <button class="md:hidden text-gray-700" id="mobileMenuBtn">
@@ -36,25 +37,25 @@
             </div>
             <!-- 移动端菜单 -->
             <div class="hidden md:hidden pb-4" id="mobileMenu">
-                <a href="index.html" class="block py-2 text-pink-500 font-semibold">首页</a>
-                <a href="classes.html" class="block py-2 text-gray-700 hover:text-pink-500">课程介绍</a>
-                <a href="teachers.html" class="block py-2 text-gray-700 hover:text-pink-500">师资团队</a>
-                <a href="gallery.html" class="block py-2 text-gray-700 hover:text-pink-500">环境展示</a>
-                <a href="about.html" class="block py-2 text-gray-700 hover:text-pink-500">关于我们</a>
-                <a href="contact.html" class="block py-2 text-gray-700 hover:text-pink-500">联系方式</a>
-                <a href="faq.html" class="block py-2 text-gray-700 hover:text-pink-500">FAQ</a>
+                <a href="index.html" class="block py-2 text-lavender font-semibold">首页</a>
+                <a href="classes.html" class="block py-2 text-gray-700 hover:text-lavender">课程介绍</a>
+                <a href="teachers.html" class="block py-2 text-gray-700 hover:text-lavender">师资团队</a>
+                <a href="gallery.html" class="block py-2 text-gray-700 hover:text-lavender">环境展示</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-lavender">关于我们</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-lavender">联系方式</a>
+                <a href="faq.html" class="block py-2 text-gray-700 hover:text-lavender">FAQ</a>
             </div>
         </div>
     </nav>
 
     <!-- Banner 区域 -->
-    <section class="pt-16 bg-gradient-to-br from-pink-50 to-white">
+    <section class="pt-16 bg-gradient-mist">
         <div class="container mx-auto px-4 py-20">
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                     <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">让舞蹈成为你的力量与表达</h1>
                     <p class="text-xl text-gray-600 mb-8">专业舞蹈培训 · 成人｜少儿 · 多舞种课堂</p>
-                    <a href="classes.html" class="inline-block bg-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-pink-600 transition duration-300">查看课程</a>
+                    <a href="classes.html" class="inline-block bg-lavender text-white px-8 py-3 rounded-lg font-semibold hover:bg-lavender-dark transition duration-300">查看课程</a>
                 </div>
                 <div class="rounded-lg h-80 overflow-hidden bg-gray-200">
                     <img src="https://raw.githubusercontent.com/507Jerry/photo/main/banner.png" alt="舞蹈学校 Banner" class="w-full h-full object-cover rounded-lg">
@@ -67,22 +68,22 @@
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-6">
-                <div class="text-center p-6 bg-pink-50 rounded-lg">
+                <div class="text-center p-6 bg-lavender-light rounded-lg">
                     <div class="text-4xl mb-4">👥</div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">小班制教学</h3>
                     <p class="text-gray-600">确保每位学员得到充分关注</p>
                 </div>
-                <div class="text-center p-6 bg-pink-50 rounded-lg">
+                <div class="text-center p-6 bg-lavender-light rounded-lg">
                     <div class="text-4xl mb-4">🎓</div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">专业导师团队</h3>
                     <p class="text-gray-600">经验丰富的舞蹈教师</p>
                 </div>
-                <div class="text-center p-6 bg-pink-50 rounded-lg">
+                <div class="text-center p-6 bg-lavender-light rounded-lg">
                     <div class="text-4xl mb-4">👨‍👩‍👧‍👦</div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">成人 & 少儿课程</h3>
                     <p class="text-gray-600">适合不同年龄段学员</p>
                 </div>
-                <div class="text-center p-6 bg-pink-50 rounded-lg">
+                <div class="text-center p-6 bg-lavender-light rounded-lg">
                     <div class="text-4xl mb-4">💃</div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">多舞种选择</h3>
                     <p class="text-gray-600">KPOP / 芭蕾 / 古典 / 中国舞</p>
@@ -103,7 +104,7 @@
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">芭蕾</h3>
                         <p class="text-gray-600 mb-4">提升体态、柔韧性与核心力量</p>
-                        <a href="classes.html" class="text-pink-500 hover:text-pink-600 font-semibold">了解更多 →</a>
+                        <a href="classes.html" class="text-lavender hover:text-lavender-dark font-semibold">了解更多 →</a>
                     </div>
                 </div>
                 <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
@@ -113,7 +114,7 @@
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">中国舞</h3>
                         <p class="text-gray-600 mb-4">融合节奏与表现力的流行舞蹈</p>
-                        <a href="classes.html" class="text-pink-500 hover:text-pink-600 font-semibold">了解更多 →</a>
+                        <a href="classes.html" class="text-lavender hover:text-lavender-dark font-semibold">了解更多 →</a>
                     </div>
                 </div>
                 <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
@@ -123,7 +124,7 @@
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">现代舞</h3>
                         <p class="text-gray-600 mb-4">提升节奏感、律动与爆发力</p>
-                        <a href="classes.html" class="text-pink-500 hover:text-pink-600 font-semibold">了解更多 →</a>
+                        <a href="classes.html" class="text-lavender hover:text-lavender-dark font-semibold">了解更多 →</a>
                     </div>
                 </div>
                 <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
@@ -133,7 +134,7 @@
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">KPOP 舞蹈</h3>
                         <p class="text-gray-600 mb-4">学习热门韩流编舞，增强舞台感</p>
-                        <a href="classes.html" class="text-pink-500 hover:text-pink-600 font-semibold">了解更多 →</a>
+                        <a href="classes.html" class="text-lavender hover:text-lavender-dark font-semibold">了解更多 →</a>
                     </div>
                 </div>
             </div>
@@ -141,11 +142,11 @@
     </section>
 
     <!-- CTA -->
-    <section class="py-16 bg-pink-500">
+    <section class="py-16 bg-lavender">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold text-white mb-4">准备好开始你的舞蹈之旅了吗？</h2>
-            <p class="text-pink-100 mb-8">联系我们，了解更多课程信息</p>
-            <a href="contact.html" class="inline-block bg-white text-pink-500 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">联系我们</a>
+            <p class="text-lavender-light mb-8">联系我们，了解更多课程信息</p>
+            <a href="contact.html" class="inline-block bg-white text-lavender px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">联系我们</a>
         </div>
     </section>
 

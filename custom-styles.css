@@ -1,0 +1,69 @@
+/* 自定义颜色方案 - 与图片风格一致 */
+:root {
+    --lavender: #C8A2C8;
+    --lavender-light: #E6D9E6;
+    --lavender-dark: #A67AA6;
+    --pale-blue: #B0C4DE;
+    --pale-blue-light: #E6F0FF;
+    --soft-peach: #FFDAB9;
+    --soft-peach-light: #FFF5E6;
+    --mist-gray: #E8E0E8;
+}
+
+/* 自定义 Tailwind 颜色类 */
+.text-lavender {
+    color: var(--lavender);
+}
+
+.text-lavender-dark {
+    color: var(--lavender-dark);
+}
+
+.bg-lavender {
+    background-color: var(--lavender);
+}
+
+.bg-lavender-light {
+    background-color: var(--lavender-light);
+}
+
+.bg-lavender-dark {
+    background-color: var(--lavender-dark);
+}
+
+.bg-pale-blue {
+    background-color: var(--pale-blue);
+}
+
+.bg-pale-blue-light {
+    background-color: var(--pale-blue-light);
+}
+
+.bg-soft-peach {
+    background-color: var(--soft-peach);
+}
+
+.bg-soft-peach-light {
+    background-color: var(--soft-peach-light);
+}
+
+.bg-mist {
+    background-color: var(--mist-gray);
+}
+
+.hover\:text-lavender:hover {
+    color: var(--lavender);
+}
+
+.hover\:bg-lavender-dark:hover {
+    background-color: var(--lavender-dark);
+}
+
+.bg-gradient-mist {
+    background: linear-gradient(to bottom right, #F5F0FF, #F0F8FF, #FFF5E6);
+}
+
+.bg-gradient-lavender {
+    background: linear-gradient(to bottom right, var(--lavender-light), var(--pale-blue-light));
+}
+
